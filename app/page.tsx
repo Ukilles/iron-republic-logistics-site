@@ -51,7 +51,7 @@ export default function HomePage() {
           <p>Phone, email, and quote request all in one place so customers know exactly how to reach you.</p>
         </div>
         <div className="contact-list">
-          <a href="tel:+12816739502">281-673-9502</a>
+          <a href="tel:+12816739502">Call Now - 281-673-9502</a>
           <a href="mailto:ukilles@gmail.com">ukilles@gmail.com</a>
           <span>La Porte based, serving Texas</span>
         </div>
