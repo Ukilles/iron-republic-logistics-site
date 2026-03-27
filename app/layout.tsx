@@ -1,13 +1,15 @@
-import './globals.css';
-import type { Metadata } from 'next';
+import "./globals.css";
 
-export const metadata: Metadata = {
-  title: 'Iron Republic Logistics',
-  description: 'La Porte based, serving Texas.',
-  metadataBase: new URL('https://ironrepubliclogistics.com'),
+export const metadata = {
+  title: "Iron Republic Logistics",
+  description: "Hot shot freight across Texas",
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <body>{children}</body>
