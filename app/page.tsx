@@ -1,226 +1,472 @@
-export default function Page() {
-  return (
-    <main className="site">
-      <section className="hero">
-        <div className="hero-overlay" />
-        <div className="container hero-grid">
-          <div className="hero-left">
-            <div className="eyebrow">La Porte, Texas • Hot Shot Freight</div>
+* {
+  box-sizing: border-box;
+}
 
-            <img
-              src="/logo.png"
-              alt="Iron Republic Logistics Logo"
-              className="logo"
-            />
+html {
+  scroll-behavior: smooth;
+}
 
-            <h1>Hot Shot Freight Across Texas — Pickups Within Hours, Not Days</h1>
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #09090b;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-            <p className="hero-copy">
-              Direct, no-nonsense freight hauling for urgent loads, LTL, and
-              equipment. Based in La Porte. Running Texas hard.
-            </p>
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
-            <div className="hero-buttons">
-              <a className="btn btn-primary" href="tel:+12816739502">
-                Call Now — 281-673-9502
-              </a>
-              <a className="btn btn-secondary" href="#quote">
-                Get a Fast Quote
-              </a>
-            </div>
+img {
+  display: block;
+  max-width: 100%;
+}
 
-            <p className="dispatch-line">
-              Dispatch answers fast. No runaround. No delays.
-            </p>
+.site {
+  min-height: 100vh;
+  background: #09090b;
+}
 
-            <div className="stat-grid">
-              <div className="stat-card">
-                <span className="stat-label">Based In</span>
-                <strong>La Porte, TX</strong>
-              </div>
-              <div className="stat-card">
-                <span className="stat-label">Coverage</span>
-                <strong>Serving Texas</strong>
-              </div>
-              <div className="stat-card">
-                <span className="stat-label">Availability</span>
-                <strong>Same-Day Runs</strong>
-              </div>
-            </div>
-          </div>
+.container {
+  width: min(1200px, calc(100% - 32px));
+  margin: 0 auto;
+}
 
-          <div className="snapshot-card">
-            <div className="snapshot-header">
-              <div>
-                <p className="snapshot-eyebrow">Quick Service Snapshot</p>
-                <h2>Fast answers. Clear service.</h2>
-              </div>
-              <span className="snapshot-dot" />
-            </div>
+.hero {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #27272a;
+  padding: 72px 0;
+  background:
+    radial-gradient(circle at top right, rgba(220, 38, 38, 0.18), transparent 35%),
+    radial-gradient(circle at bottom left, rgba(255, 255, 255, 0.06), transparent 30%);
+}
 
-            <div className="snapshot-list">
-              <div className="snapshot-row">
-                <span>Location</span>
-                <strong>La Porte, TX (Local Dispatch)</strong>
-              </div>
-              <div className="snapshot-row">
-                <span>Coverage</span>
-                <strong>Statewide Texas Runs</strong>
-              </div>
-              <div className="snapshot-row">
-                <span>Freight</span>
-                <strong>Hot Shot • LTL • Equipment</strong>
-              </div>
-              <div className="snapshot-row">
-                <span>Response</span>
-                <strong>Immediate Dispatch Availability</strong>
-              </div>
-            </div>
+.hero-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.2fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+}
 
-            <div className="snapshot-note">
-              Built for customers who need a clean quote, a real response, and
-              dependable delivery.
-            </div>
-          </div>
-        </div>
-      </section>
+.eyebrow,
+.section-eyebrow,
+.snapshot-eyebrow {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
 
-      <section className="section">
-        <div className="container">
-          <div className="section-head">
-            <div>
-              <p className="section-eyebrow">Services</p>
-              <h2>Built for speed. Backed by reliability.</h2>
-            </div>
-            <p className="section-copy">
-              Fast dispatch response, direct communication, and Texas-focused
-              lanes for customers who need a load moved without delays or
-              excuses.
-            </p>
-          </div>
+.eyebrow {
+  padding: 8px 12px;
+  border: 1px solid rgba(185, 28, 28, 0.45);
+  background: rgba(127, 29, 29, 0.22);
+  color: #fecaca;
+  border-radius: 999px;
+  margin-bottom: 18px;
+}
 
-          <div className="card-grid three">
-            <div className="card">
-              <h3>Same-Day Hot Shot</h3>
-              <p>
-                When the load cannot wait, neither do we. Fast pickup, direct
-                delivery, and real-time updates from dispatch to drop-off.
-              </p>
-            </div>
-            <div className="card">
-              <h3>LTL Freight</h3>
-              <p>
-                Smaller loads, same urgency. Pallets, partials, and commercial
-                freight moved without delays or excuses.
-              </p>
-            </div>
-            <div className="card">
-              <h3>Equipment Hauling</h3>
-              <p>
-                Secure transport for equipment that needs to arrive intact and
-                on schedule. No shortcuts. No surprises.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+.logo {
+  width: 180px;
+  margin-bottom: 20px;
+}
 
-      <section className="section section-alt">
-        <div className="container">
-          <div className="card-grid four">
-            <div className="mini-card">
-              <h3>Direct Communication</h3>
-              <p>
-                No middlemen. No wasted time. Just fast answers and a clear line
-                from dispatch to delivery.
-              </p>
-            </div>
-            <div className="mini-card">
-              <h3>Fast Dispatch</h3>
-              <p>
-                Immediate response for customers who need action now, not a
-                callback three hours later.
-              </p>
-            </div>
-            <div className="mini-card">
-              <h3>Texas-Focused</h3>
-              <p>
-                Local dispatch from La Porte with statewide lanes built for
-                reliable timing and clean handling.
-              </p>
-            </div>
-            <div className="mini-card">
-              <h3>Straightforward Service</h3>
-              <p>
-                Clear quotes, direct updates, and dependable delivery without
-                excuses or confusion.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+.hero h1 {
+  margin: 0;
+  max-width: 760px;
+  font-size: clamp(42px, 6vw, 72px);
+  line-height: 1.02;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+}
 
-      <section id="quote" className="section">
-        <div className="container quote-grid">
-          <div>
-            <p className="section-eyebrow">Get a Fast, Straightforward Quote</p>
-            <h2>Got a load that cannot sit?</h2>
-            <p className="section-copy left">
-              Call now and get it moving, or send the details below for a fast
-              quote. No games. No inflated pricing. Just a clear number and a
-              fast answer.
-            </p>
+.hero-copy {
+  margin: 18px 0 0;
+  max-width: 720px;
+  color: #d4d4d8;
+  font-size: 18px;
+  line-height: 1.7;
+}
 
-            <div className="contact-list">
-              <p>Phone: (281) 673-9502 — dispatch responds fast</p>
-              <p>Email: ukilles@gmail.com</p>
-              <p>Service Area: La Porte-based, serving all Texas lanes</p>
-            </div>
-          </div>
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 28px;
+}
 
-          <form
-            action="https://formspree.io/f/xjgpkewv"
-            method="POST"
-            className="quote-form"
-          >
-            <input name="name" placeholder="Name" />
-            <input name="phone" placeholder="Phone" />
-            <input name="pickup" placeholder="Pickup location" />
-            <input name="delivery" placeholder="Delivery location" />
-            <input name="freightType" placeholder="Freight type" />
-            <textarea name="details" placeholder="Load details" />
-            <button type="submit" className="btn btn-primary full">
-              Request Quote
-            </button>
-          </form>
-        </div>
-      </section>
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  padding: 0 22px;
+  border-radius: 18px;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
 
-      <section className="section final-section">
-        <div className="container">
-          <div className="final-card">
-            <p className="section-eyebrow">Final Call</p>
-            <h2>Texas freight does not wait — neither should you</h2>
-            <p className="final-copy">
-              If timing matters, you already know what to do. Call now and get
-              the load moving.
-            </p>
-            <a className="btn btn-primary final-btn" href="tel:+12816739502">
-              Call 281-673-9502 Now
-            </a>
-          </div>
-        </div>
-      </section>
+.btn-primary {
+  background: #dc2626;
+  color: #ffffff;
+  box-shadow: 0 10px 30px rgba(127, 29, 29, 0.35);
+}
 
-      <footer className="footer">
-        <div className="container footer-row">
-          <p>© 2026 Iron Republic Logistics LLC. All rights reserved.</p>
-          <div className="footer-links">
-            <a href="#quote">Quote</a>
-            <a href="tel:+12816739502">Call</a>
-          </div>
-        </div>
-      </footer>
-    </main>
-  );
+.btn-primary:hover {
+  background: #ef4444;
+}
+
+.btn-secondary {
+  border: 1px solid #3f3f46;
+  color: #f4f4f5;
+  background: transparent;
+}
+
+.btn-secondary:hover {
+  background: #18181b;
+  border-color: #52525b;
+}
+
+.dispatch-line {
+  margin-top: 14px;
+  color: #fecaca;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.stat-card {
+  padding: 18px;
+  border: 1px solid #27272a;
+  background: rgba(24, 24, 27, 0.8);
+  border-radius: 22px;
+}
+
+.stat-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #d4d4d8;
+  margin-bottom: 8px;
+}
+
+.snapshot-card {
+  border: 1px solid #27272a;
+  background: linear-gradient(135deg, #18181b, #09090b);
+  border-radius: 32px;
+  padding: 24px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+.snapshot-card > div:first-child {
+  border: 1px solid #27272a;
+  background: #09090b;
+  border-radius: 24px;
+  padding: 24px;
+}
+
+.snapshot-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.snapshot-eyebrow {
+  color: #71717a;
+  margin: 0 0 8px;
+}
+
+.snapshot-header h2 {
+  margin: 0;
+  font-size: 32px;
+  line-height: 1.1;
+}
+
+.snapshot-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  background: #ef4444;
+  flex: 0 0 auto;
+  margin-top: 6px;
+}
+
+.snapshot-list {
+  display: grid;
+  gap: 12px;
+}
+
+.snapshot-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 14px 16px;
+  border: 1px solid #27272a;
+  background: rgba(24, 24, 27, 0.7);
+  border-radius: 18px;
+}
+
+.snapshot-row span {
+  color: #a1a1aa;
+  font-size: 14px;
+}
+
+.snapshot-row strong {
+  text-align: right;
+  font-size: 15px;
+}
+
+.snapshot-note {
+  margin-top: 18px;
+  padding: 16px;
+  border: 1px solid rgba(127, 29, 29, 0.4);
+  background: rgba(127, 29, 29, 0.22);
+  border-radius: 18px;
+  color: #fee2e2;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.section {
+  padding: 72px 0;
+}
+
+.section-alt {
+  border-top: 1px solid #27272a;
+  border-bottom: 1px solid #27272a;
+  background: rgba(24, 24, 27, 0.45);
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: end;
+  margin-bottom: 28px;
+}
+
+.section-eyebrow {
+  color: #fca5a5;
+  margin-bottom: 8px;
+}
+
+.section h2,
+.final-card h2 {
+  margin: 0;
+  font-size: clamp(30px, 4vw, 48px);
+  line-height: 1.1;
+}
+
+.section-copy {
+  max-width: 560px;
+  color: #a1a1aa;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+.section-copy.left {
+  max-width: 620px;
+}
+
+.card-grid {
+  display: grid;
+  gap: 22px;
+}
+
+.card-grid.three {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card-grid.four {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card,
+.mini-card {
+  border: 1px solid #27272a;
+  background: rgba(24, 24, 27, 0.8);
+  border-radius: 28px;
+  padding: 24px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+.card h3,
+.mini-card h3 {
+  margin: 0 0 12px;
+  font-size: 24px;
+}
+
+.card p,
+.mini-card p {
+  margin: 0;
+  color: #a1a1aa;
+  line-height: 1.75;
+}
+
+.mini-card h3 {
+  font-size: 20px;
+}
+
+.quote-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+  align-items: start;
+}
+
+.contact-list {
+  margin-top: 24px;
+  display: grid;
+  gap: 10px;
+  color: #d4d4d8;
+}
+
+.quote-form {
+  border: 1px solid #27272a;
+  background: rgba(24, 24, 27, 0.8);
+  border-radius: 32px;
+  padding: 24px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.22);
+  display: grid;
+  gap: 14px;
+}
+
+.quote-form input,
+.quote-form textarea {
+  width: 100%;
+  border: 1px solid #3f3f46;
+  background: #09090b;
+  color: #ffffff;
+  border-radius: 18px;
+  padding: 14px 16px;
+  font-size: 15px;
+}
+
+.quote-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.quote-form input::placeholder,
+.quote-form textarea::placeholder {
+  color: #71717a;
+}
+
+.full {
+  width: 100%;
+}
+
+.final-section {
+  border-top: 1px solid #27272a;
+  background: rgba(9, 9, 11, 0.95);
+}
+
+.final-card {
+  border: 1px solid #27272a;
+  background: rgba(24, 24, 27, 0.72);
+  border-radius: 32px;
+  padding: 36px;
+  text-align: center;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.22);
+}
+
+.final-copy {
+  max-width: 700px;
+  margin: 18px auto 0;
+  color: #a1a1aa;
+  line-height: 1.7;
+}
+
+.final-btn {
+  margin-top: 28px;
+}
+
+.footer {
+  border-top: 1px solid #27272a;
+  background: rgba(9, 9, 11, 0.95);
+}
+
+.footer-row {
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  color: #71717a;
+  font-size: 14px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 18px;
+}
+
+.footer-links a:hover {
+  color: #d4d4d8;
+}
+
+@media (max-width: 980px) {
+  .hero-grid,
+  .quote-grid,
+  .card-grid.three,
+  .card-grid.four,
+  .stat-grid,
+  .section-head {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+
+  .section-head {
+    align-items: start;
+  }
+
+  .snapshot-row {
+    flex-direction: column;
+  }
+
+  .snapshot-row strong {
+    text-align: left;
+  }
+
+  .footer-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 56px 0;
+  }
+
+  .logo {
+    width: 140px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .container {
+    width: min(100%, calc(100% - 24px));
+  }
 }
