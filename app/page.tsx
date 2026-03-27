@@ -5,7 +5,7 @@ export default function HomePage() {
         <div className="hero-copy">
           <div className="eyebrow">La Porte, Texas • Hot Shot Freight</div>
           <img src="/logo.png" alt="Iron Republic Logistics logo" className="logo" />
-          <h1>Reliable hot shot freight across Texas.</h1>
+          <h1>Hot Shot freight in Texas - Pickups Within Hours, Not Days.</h1>
           <p className="lead">
             Iron Republic Logistics provides direct, responsive service for urgent deliveries,
             light freight, pallets, and regional Texas lanes.
