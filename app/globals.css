@@ -79,16 +79,20 @@ img {
 
 .logo {
   width: 180px;
+  height: auto;
   margin-bottom: 20px;
+  opacity: 0.95;
+  mix-blind-mode: lighten;
 }
 
 .hero h1 {
   margin: 0;
   max-width: 760px;
-  font-size: clamp(42px, 6vw, 72px);
-  line-height: 1.02;
-  font-weight: 900;
-  letter-spacing: -0.03em;
+  font-size: clamp(36px, 4vw, 52px);
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -0.5em;
+  margin-bottom: 16px;
 }
 
 .hero-copy {
