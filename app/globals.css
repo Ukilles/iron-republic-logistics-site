@@ -96,11 +96,11 @@ img {
 }
 
 .hero-copy {
-  margin: 18px 0 0;
-  max-width: 720px;
-  color: #d4d4d8;
-  font-size: 18px;
-  line-height: 1.7;
+  margin: 17px 0 0;
+  max-width: 520px;
+  color: #cfcfcf;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 .hero-buttons {
