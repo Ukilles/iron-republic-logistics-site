@@ -5,8 +5,7 @@ export default function Page() {
         <div className="hero-overlay" />
         <div className="container hero-grid">
           <div className="hero-left">
-            <div className="eyebrow">La Porte, Texas • Hot Shot Freight</div>
-
+           
             <img
               src="/logo.png"
               alt="Iron Republic Logistics Logo"
