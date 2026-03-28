@@ -2,10 +2,8 @@ export default function Page() {
   return (
     <main className="site">
       <section className="hero">
-        <div className="hero-overlay" />
         <div className="container hero-grid">
           <div className="hero-left">
-           
             <img
               src="/logo.png"
               alt="Iron Republic Logistics Logo"
@@ -15,8 +13,9 @@ export default function Page() {
             <h1>Hot Shot Freight Across Texas — Pickups Within Hours, Not Days</h1>
 
             <p className="hero-copy">
-              Direct, no-nonsense freight hauling for urgent loads, LTL, and
-              equipment. Based in La Porte. Running Texas hard.
+              Direct, no-nonsense freight hauling for urgent small freight,
+              boxes, and pallet loads within safe weight limits. Based in La
+              Porte. Running Texas hard.
             </p>
 
             <div className="hero-buttons">
@@ -68,17 +67,17 @@ export default function Page() {
               </div>
               <div className="snapshot-row">
                 <span>Freight</span>
-                <strong>Hot Shot • LTL • Equipment</strong>
+                <strong>Boxes • Small Freight • Pallets</strong>
               </div>
               <div className="snapshot-row">
-                <span>Response</span>
-                <strong>Immediate Dispatch Availability</strong>
+                <span>Load Limits</span>
+                <strong>Up to about 2,500 lbs</strong>
               </div>
             </div>
 
             <div className="snapshot-note">
               Built for customers who need a clean quote, a real response, and
-              dependable delivery.
+              dependable delivery within safe size and weight limits.
             </div>
           </div>
         </div>
@@ -100,24 +99,24 @@ export default function Page() {
 
           <div className="card-grid three">
             <div className="card">
-              <h3>Same-Day Hot Shot</h3>
+              <h3>Urgent Small Freight</h3>
               <p>
-                When the load cannot wait, neither do we. Fast pickup, direct
-                delivery, and real-time updates from dispatch to drop-off.
+                Fast pickup and direct delivery for smaller time-sensitive loads
+                that need to move without delays.
               </p>
             </div>
             <div className="card">
-              <h3>LTL Freight</h3>
+              <h3>Boxes &amp; Cartons</h3>
               <p>
-                Smaller loads, same urgency. Pallets, partials, and commercial
-                freight moved without delays or excuses.
+                Clean, straightforward transport for boxed freight, packaged
+                goods, and smaller commercial shipments.
               </p>
             </div>
             <div className="card">
-              <h3>Equipment Hauling</h3>
+              <h3>Pallet Loads Up to 2,500 lbs</h3>
               <p>
-                Secure transport for equipment that needs to arrive intact and
-                on schedule. No shortcuts. No surprises.
+                Single pallets and limited light freight moved securely and on
+                schedule within safe weight limits.
               </p>
             </div>
           </div>
@@ -130,29 +129,29 @@ export default function Page() {
             <div className="mini-card">
               <h3>Direct Communication</h3>
               <p>
-                No middlemen. No wasted time. Just fast answers and a clear line
-                from dispatch to delivery.
+                No middlemen. No wasted time. Just clear answers from pickup to
+                drop-off.
               </p>
             </div>
             <div className="mini-card">
               <h3>Fast Dispatch</h3>
               <p>
-                Immediate response for customers who need action now, not a
-                callback three hours later.
+                Quick response for customers who need an answer now, not hours
+                later.
               </p>
             </div>
             <div className="mini-card">
-              <h3>Texas-Focused</h3>
+              <h3>Texas Local &amp; Regional</h3>
               <p>
-                Local dispatch from La Porte with statewide lanes built for
-                reliable timing and clean handling.
+                Based in La Porte with dependable local and regional Texas
+                lanes.
               </p>
             </div>
             <div className="mini-card">
-              <h3>Straightforward Service</h3>
+              <h3>Clear Load Limits</h3>
               <p>
-                Clear quotes, direct updates, and dependable delivery without
-                excuses or confusion.
+                Best for boxes, light freight, and pallet loads within safe size
+                and weight limits.
               </p>
             </div>
           </div>
@@ -173,12 +172,16 @@ export default function Page() {
             <div className="contact-list">
               <p>Phone: (281) 673-9502 — dispatch responds fast</p>
               <p>Email: ukilles@gmail.com</p>
-              <p>Service Area: La Porte-based, serving all Texas lanes</p>
+              <p>
+                Service Area: La Porte-based, serving local and regional Texas
+                lanes
+              </p>
+              <p>Best for boxes, small freight, and pallet loads up to 2,500 lbs</p>
             </div>
           </div>
 
           <form
-            action="https://formspree.io/f/xjgpkewv"
+            action="https://formspree.io/f/YOUR_FORM_ID"
             method="POST"
             className="quote-form"
           >
