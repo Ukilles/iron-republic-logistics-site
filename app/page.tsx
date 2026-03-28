@@ -67,11 +67,11 @@ export default function Page() {
               </div>
               <div className="snapshot-row">
                 <span>Freight</span>
-                <strong>Boxes • Small Freight • Pallets</strong>
+                <strong>Best for Pallets, Boxes, and Small Freight.</strong>
               </div>
               <div className="snapshot-row">
                 <span>Load Limits</span>
-                <strong>Up to about 2,500 lbs</strong>
+                <strong>Pickups available within hours depending on location and load.</strong>
               </div>
             </div>
 
